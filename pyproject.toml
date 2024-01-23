@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "template"
+name = "sella_tests"
 description="A Python package description goes here."
 version = "0.0.1"
 readme = "README.md"
@@ -39,10 +39,10 @@ docs = [
 ]
 
 [tool.setuptools.package-data]
-template = ["py.typed"]
+sella_tests = ["py.typed"]
 
 [tool.pyright]
-include = ["template"]
+include = ["sella_tests"]
 exclude = ["**/__pycache__"]
 
 [tool.pytest.ini_options]
@@ -118,7 +118,7 @@ exclude = []
 flake8-unused-arguments.ignore-variadic-names = true
 extend-exclude = ["tests"]
 pydocstyle.convention = "numpy"
-isort.known-first-party = ["template"]
+isort.known-first-party = ["sella_tests"]
 
 [tool.docformatter]
 pre-summary-newline = true
